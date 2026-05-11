@@ -8,10 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Compendium.Core\Compendium.Core.csproj" />
-    <ProjectReference Include="..\..\Abstractions\Compendium.Abstractions.Billing\Compendium.Abstractions.Billing.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\Compendium.Infrastructure\Compendium.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\Multitenancy\Compendium.Multitenancy\Compendium.Multitenancy.csproj" />
+    <!-- Compendium framework — consumed as published NuGets per ADR-0006. -->
+    <PackageReference Include="Compendium.Core" />
+    <PackageReference Include="Compendium.Abstractions.Billing" />
+    <PackageReference Include="Compendium.Infrastructure" />
+    <PackageReference Include="Compendium.Multitenancy" />
   </ItemGroup>
 
   <ItemGroup>

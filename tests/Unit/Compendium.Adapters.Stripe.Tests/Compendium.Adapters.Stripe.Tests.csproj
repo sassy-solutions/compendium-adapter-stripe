@@ -12,9 +12,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\Core\Compendium.Core\Compendium.Core.csproj" />
-    <ProjectReference Include="..\..\..\src\Abstractions\Compendium.Abstractions.Billing\Compendium.Abstractions.Billing.csproj" />
-    <ProjectReference Include="..\..\..\src\Adapters\Compendium.Adapters.Stripe\Compendium.Adapters.Stripe.csproj" />
+    <ProjectReference Include="..\..\..\src\Compendium.Adapters.Stripe\Compendium.Adapters.Stripe.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Framework deps used directly by tests (e.g. Result types from Core, billing models from Abstractions). -->
+    <PackageReference Include="Compendium.Core" />
+    <PackageReference Include="Compendium.Abstractions.Billing" />
   </ItemGroup>
 
   <ItemGroup>

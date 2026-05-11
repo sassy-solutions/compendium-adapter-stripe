@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D80CCB17-B940-4216-A60E-D8A7308FEDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compendium.Adapters.Stripe", "src\Compendium.Adapters.Stripe\Compendium.Adapters.Stripe.csproj", "{5179FAB8-96DB-4C3B-9F8C-8273606E23E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D039979D-12C7-42AB-8B09-ABBCB172FA4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{8D8F47A6-E262-4A00-944C-3270D1E590B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compendium.Adapters.Stripe.Tests", "tests\Unit\Compendium.Adapters.Stripe.Tests\Compendium.Adapters.Stripe.Tests.csproj", "{973A85AD-178F-4FCE-B742-FE7B9113183C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5179FAB8-96DB-4C3B-9F8C-8273606E23E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5179FAB8-96DB-4C3B-9F8C-8273606E23E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5179FAB8-96DB-4C3B-9F8C-8273606E23E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5179FAB8-96DB-4C3B-9F8C-8273606E23E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973A85AD-178F-4FCE-B742-FE7B9113183C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973A85AD-178F-4FCE-B742-FE7B9113183C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973A85AD-178F-4FCE-B742-FE7B9113183C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973A85AD-178F-4FCE-B742-FE7B9113183C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5179FAB8-96DB-4C3B-9F8C-8273606E23E9} = {D80CCB17-B940-4216-A60E-D8A7308FEDC8}
+		{8D8F47A6-E262-4A00-944C-3270D1E590B6} = {D039979D-12C7-42AB-8B09-ABBCB172FA4E}
+		{973A85AD-178F-4FCE-B742-FE7B9113183C} = {8D8F47A6-E262-4A00-944C-3270D1E590B6}
+	EndGlobalSection
+EndGlobal
