@@ -12,6 +12,11 @@
     <PackageVersion Include="Compendium.Multitenancy" Version="1.0.0-preview.8" />
   </ItemGroup>
 
+  <!-- Build-time tooling -->
+  <ItemGroup>
+    <PackageVersion Include="MinVer" Version="6.0.0" />
+  </ItemGroup>
+
   <!-- Production runtime -->
   <ItemGroup>
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />

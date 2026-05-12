@@ -5,6 +5,8 @@
     <RootNamespace>Compendium.Adapters.Stripe</RootNamespace>
     <PackageId>Compendium.Adapters.Stripe</PackageId>
     <Description>Stripe billing adapter for Compendium Framework: Subscriptions, checkouts, customer portal, and HMAC-signed webhooks via the official Stripe.net SDK.</Description>
+    <PackageTags>compendium;adapter;stripe;billing</PackageTags>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
