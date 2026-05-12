@@ -46,9 +46,15 @@ jobs:
           test "$(ls artifacts/*.nupkg 2>/dev/null | wc -l)" = "1" || { echo "Expected exactly 1 .nupkg in artifacts/"; exit 1; }
 
       - name: Push to nuget.org
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
         run: |
+          if [ -z "$NUGET_API_KEY" ]; then
+            echo "::error::NUGET_API_KEY is empty. Set it as an organisation secret (visibility: this repo) or a repository secret. See docs/RELEASE.md."
+            exit 1
+          fi
           dotnet nuget push "artifacts/*.nupkg" \
-            --api-key ${{ secrets.NUGET_API_KEY }} \
+            --api-key "$NUGET_API_KEY" \
             --source https://api.nuget.org/v3/index.json \
             --skip-duplicate
 
